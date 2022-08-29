@@ -10,5 +10,3 @@ export const routes = {
   posts: { view: PostsPage, path: "/posts", route: createRoute() },
   notfound404: { view: NotFound404Page, path: "/404", route: createRoute() },
 };
-
-guard({ filter: routes.posts.route.$isOpened, target: getPostsFx });
